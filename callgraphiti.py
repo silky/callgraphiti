@@ -9,9 +9,9 @@ __author__ = "Noon Silk"
 class CallGraphInfo:
     """
         Maps some routes for looking at all graphs. Bind this to something like:
-            /graphs
+            /graph
 
-        then view it by browsing to, unsurprisingly, /graphs. You'll of course neeed
+        then view it by browsing to, unsurprisingly, /graph. You'll of course neeed
         an appropriate config in cherrypy.
     """
 
@@ -20,6 +20,7 @@ class CallGraphInfo:
     # Hardcoded for now. Probably can just overload this
     # to be loaded from some template.
 
+    # {{{
     html = """
         <html>
             <head>
@@ -68,6 +69,8 @@ class CallGraphInfo:
             </body>
         </html>
     """
+    # }}}
+    
     base_include = []
     base_exclude = []
      
